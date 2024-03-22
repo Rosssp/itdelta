@@ -1,0 +1,22 @@
+.wrapper{
+    margin-top: 46px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    overflow: hidden;
+    gap: 24px;
+
+    @media (max-width:1280px) {
+        padding: 0 6px !important;
+    }
+    @media (max-width:1024px) {
+        gap: 12px;
+        padding: 0 6px !important;
+    }
+    @media (max-width:568px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    }
+}

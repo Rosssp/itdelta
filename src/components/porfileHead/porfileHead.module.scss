@@ -1,0 +1,59 @@
+.wrapper{
+    max-height: 256px;
+    height: 256px;
+    position: relative;
+    @media (max-width:568px) {
+        max-height: max-content;
+        height: max-content;
+    }
+    & .background{
+        position: absolute;
+        max-height: 192px;
+        // height: 192px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    & .profileInfo{
+        padding: 128px 200px 0 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media (max-width:1024px) {
+            padding: 128px 0;
+        }
+        @media (max-width:568px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        & .avatar{
+            max-width: 128px;
+            max-height: 128px;
+            overflow: hidden;
+            & img{
+            }
+        }
+        & .credentials{
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            @media (max-width:568px) {
+                       margin-left: 0;
+            }
+        }
+        & .buttons{
+            margin-left: auto;
+            @media (max-width:568px) {
+                       margin-left: 0;
+            }
+            & >*{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            & > *:not(:last-child){
+                margin-right: 16px;
+            }
+        }
+    }
+}

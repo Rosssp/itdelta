@@ -1,0 +1,35 @@
+.wrapper{
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    padding: 13px 16px; 
+
+    &> * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    & > *:not(:last-child){
+           margin-right: 16px;
+   }
+    & img{
+        max-width: 16px;
+        min-width: 16px;
+        max-height: 16px;
+        min-height: 16px;
+        position: relative;
+        object-fit: contain !important;
+    }
+    & p{
+        font-weight: 500;
+        font-size: 14px;
+        color: #374151;
+    }
+}
+
+.violet{
+background-color: #4F46E5 !important;
+& p{
+color: white !important;
+}
+}
